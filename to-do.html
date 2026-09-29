@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>To-do list</title>
+        <link rel="stylesheet" href="to-do.css">
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    </head>
+    <body>
+        <div id="container">
+        <div class="header">
+            <h1>My Todo List</h1>
+            <button id="mode"> 🌙 Dark  Mode</button>
+        </div>
+        <div id="input-area">
+            <input id="added-tasks" type="text" placeholder="Enter a new  task.......">
+                <select  name="priority" id="priority">
+                <option value="High">High</option>
+                <option value="Medium">Medium</option>
+                <option value="Low">Low</option>
+                </select>
+                <input id="dueDate" type="date" name="due Date">
+            <button id="add">Add</button>
+        </div>
+     <div>
+        <input type="text" id="searchtext" placeholder=" 🔍 Search tasks...">
+     </div>
+     <div id="filterBtn">
+        <button data-filter="all">All</button>
+        <button data-filter="active">Active</button>
+        <button data-filter="completed">Completed</button>
+        <button data-filter="high">High</button>
+        <button data-filter="medium">Medium</button>
+        <button data-filter="low">Low</button>
+     </div>
+     <div>
+
+        <h2>Task List</h2>
+        <div id="display"></div>
+     </div>
+        <div id="progress">
+            <h2>Progress: <span id="progress-text"> 0/0 (0%) </span></h2>
+            <div id="progress-bar-bg">
+                 <div id="progress-bar"></div>
+            </div>
+        </div>
+        <div id="status">
+            <p>Total:<span id="total">0</span> | Completed:<span id="completed">0</span> | Remaining:<span id="remaining">0</span</p>
+        </div>
+
+        <div id="footer">
+             <button id="sortpriority">Sort by Priority</button>
+           <button id="sortdate">Sort by Date</button>
+            <button id="clear">Clear Completed</button>
+              <button id="delete"> DeleteAll </button>
+         </div>
+     </div>
+     <script src="to-do.js"></script>
+    </body>
+</html>
+
